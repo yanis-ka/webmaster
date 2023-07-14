@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- Ceci est un commentaire -->
+
+<html lang="en">
+<head>
+    <title>Structure d'un document HTML</title>
+    <meta charset="UTF-8">
+    <!-- Connexion avec des fichiers tiers -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Structure d'un document HTML</h1>
+    <!-- Balise inline 
+        Petit outils qui peut s'inserrer dans une autre balise
+        elle ne crée pas de saut de ligne
+        elle s'adapte a a taille de son contenu
+    -->
+
+    <!-- Balise bloc de construction
+        elle crée une section distincte
+        elle occupe tout la largeur de l'écren
+        utile pour structurer ma page
+    -->
+    <h2>Les titres (heading)</h2>
+    <!-- Les titres servent à structurer 
+        les textes en hierarchie -->
+        h1>Titre principal : je devrais être présent
+        dans chaque page et unique.
+    </h1> 
+    <h2>Titre secondaire</h2>
+    <h3>Titre encore un peu fort</h3>    
+    <h4>Titre un peu plus faible</h4>
+    <h5>Titre faible</h5>
+    <h6>Titre qui ressemble à du texte paragraphe</h6>
+
+    <p>Cect est un texte en italique :
+        <em>Je suis italique</em>
+         et
+         <i>Moi aussi</i>
+    </p>
+    <p>Je suis un texte souligné : <u>EEHE</u></p>
+    <h2>Les liens hypertexts</h2>
+    <!-- Essentiel pour naviguer
+        dans différentes pages -->
+        <a href="https://www.google.fr/" target="_blank" >
+            Allez sur le site Google (lien externe)</a>
+            
+            
+            <a href="https://www.google.fr" target="_blank">Allez sur le site google (lien externe)</a>
+            <a href="contact.html">Allez vers contact (lien interne)</a>
+    <!-- UL : Liste NON ordonnée-->
+    <ul>
+    <li>Shanks le Roux</li>
+    <li>Barbe Noir</li>
+    <li>Luffy au chapeau de paille</li>
+    <li>Buggy le clown</li>
+    </ul>
+    <!-- OL : Liste ordonnée -->
+    <ol>
+        <li>Shanks le Roux</li>
+        <li>Barbe Noir</li>
+        <li>Luffy au chapeau de paille</li>
+        <li>Buggy le clown</li>
+    </ol>
+    <!--Shortcup emmet : ol>lix5>a -->
+    
+    <table>
+        <!-- Organisation de données -->
+        <!--entète-->
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Age</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <!--corps-->
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>25</td>
+                <td>GTO</td>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>25</td>
+                <td>Geralt de riv</td>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>25</td>
+                <td>Trevor</td>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>25</td>
+                <td>Pikachu</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <h2>Les balises div et span</h2>
+    <!-- Ces balises sont des balises génériques qui sont
+    utilisé par regrouper ou diviser des élément sans
+    avoir de signification particuliere
+    -->
+    <div>
+        <p>La div est un conteneur de bloc qui
+            regroupe un ensemble d'élement
+        </p>
+        <p>Je suis avec lui</p>
+    </div> I
+    <h2>Les balises div et span</h2>
+    <!-- Ces balises sont des balises génériques qui sont
+    utilisé par regrouper ou diviser des élément sans 
+    avoir de signification particuliere
+    -->
+    <div>
+        <p>La div est un conteneur de bloc qui 
+            regroupe un ensemble d'élement
+        </p>
+        <p>Je suis avec lui</p>
+    </div>
+
+    <p>Le span est une balise inline
+        <span>Ceci est un span</span> 
+        Ceci permet d'appliquer un comportement
+        sur un bout de texte. </p>
+
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutons et formulares</title>
+</head>
+<body>
+    <h1>Les boutons et les formulaires</h1>
+
+    <h2>Création d'un bouton</h2>
+    <!-- Par défaut de type submit -->
+    <button>Cliquer ici!</button>
+    <h3>3 types de boutons</h3>
+    <ul>
+        <li>Button :
+            <button type="button">Type button</button>
+        </li>
+        <li>Button :
+            <button type="submit">Type submit</button>
+        </li>
+        <li>Button :
+            <button type="reset">Type submit</button>
+        </li>
+    </ul>
+
+    <h2>Les formulaires</h2>
+    <p>Création de formulaire</p>
+    <form>
+        <!--découper une partie du formulaire-->
+        <fieldset>
+            <legend>Iinformations personnelles</legend>
+            <!--Champs + etiquette-->
+
+            <!--Champ texte-->
+            <label for="name">Quel est votre nom?</label>
+            <input 
+                type="text"  
+                id="name" 
+                placeholder="Yanis" 
+                value="" 
+                required
+            >
+
+            <!--Champ numérique-->
+            <label for="age">Quel est votre age?</label>
+            <input type="number" id="age" placeholder="25..">
+
+            <!--Champ mot de passe-->
+            <label for="psw">Votre mot de passe</label>
+            <input type="password" id="psw" placeholder="******">
+
+            <!--champ multiligne-->
+            <label for="desc">Descrivez-vous en quelques lignes</label>
+            <textarea name="desc" id="desc" cols="20" rows="10"></textarea>
+
+        </fieldset>
+        <fieldset>
+            <p>Quelles sont vos compétences?</p>
+            <legend>Informations complémentaires</legend>
+            <!--Checkbox-->
+            <label for="level1">Javascript</label>
+            <input type="checkbox" id="level1">
+
+            <label for="level2">Php</label>
+            <input type="checkbox" id="level2">
+
+            <label for="level3">MySQL</label>
+            <input type="checkbox" id="level3">
+
+            <label for="level4">Java</label>
+            <input type="checkbox" id="level4">
+
+            <!--Radio-->
+            <p>Quelle est votre couleur préférée?</p>
+            <label for="red">Rouge</label>
+            <input type="radio" id="red">
+
+            <label for="green">Vert</label>
+            <input type="radio" id="green">
+
+            <label for="blue">Bleu</label>
+            <input type="radio" id="level3">
+
+            <!--Liste déroulante-->
+            <label for="rad">Quel est votre radio préférée?</label>
+            <select name="rad" id="rad">
+                <option value="SKY">Skyrock</option>
+                <option value="RFM">RFM</option>
+                <option value="MV" selected>Mouv</option>
+            </select>
+
+            <button type="submit">Envoyer</button>
+
+        </fieldset>
+    </form>
+
+
+
+</body>
+</html>

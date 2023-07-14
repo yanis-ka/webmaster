@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les balise de Média</title>
+</head>
+<body>
+    <h1>Les médias</h1>
+    <!-- Les images, les vidéos,
+    les sons et autres -->
+    <h2>Les images et format d'image</h2>
+    <!-- source externe ou interne -->
+
+    <!-- source externe -->
+    <img 
+    src="https://images.unsplash.com/photo-1661956601031-4cf09efadfce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60" 
+    alt="Homme sur sa tablette">
+
+    <!-- source interne -->
+    <figure>
+
+        <img 
+        width="500"
+        height="300"
+        src="assets/img/ff16.jpg" 
+        alt="Héros de final fantasy XVI"
+        >
+        <figcaption>Héros de final fantasy XVI</figcaption>
+    </figure>
+
+    <h2>Intégration de son/vidéo</h2>
+    <audio
+    width="500"
+    height="300"
+    src="assets/audio/sonic.mp3" 
+    controls loop autoplay muted ></audio>
+    <video
+    width="500"
+    height="300" 
+    src="assets/video/zeste-citron.mp4" 
+    controls loop autoplay muted></video>
+
+    <h2>Autres type de média</h2>
+    <!-- Iframes -->
+
+
+    <!-- Google Maps -->
+    <p>Plan de carte</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.8779985443957!2d3.891373415496317!3d43.60908177912283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6af5c2c3f1ef3%3A0x49fbb173c2fee7ed!2sDAWAN%20Montpellier!5e0!3m2!1sfr!2sfr!4v1687782970622!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- youtube -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XMVfWGPGbtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

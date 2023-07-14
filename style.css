@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    max-width: 100vw;
+}
+/* Unité de mesure 
+    px : pixel
+    em: référence à la taille de la police du parent direct
+    rem : (root em) référence à la taille 
+    de la page HTML
+    % : pourcentage
+    vw: (visual width)
+    vh: (visual height)
+    in: inch
+    cm: centimetre
+    pt: point
+    pc: pica
+    */
+
+/* Texte */
+.text {
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    font-weight: bolder;
+    font-style: italic;
+
+}
+
+/* Dimensions */
+.dimension {
+    background-color: brown;
+    min-width: 100px;
+    width: 200px; /* Si width declaré il est prioritaire */
+    max-width: 30%;
+    height: calc(300px - 30px); /* execute un calcul */
+}
+
+/* Couleur hexadecimal  */
+
+.red {
+    background-color: #dc2432;
+    color: #fff;
+}
+
+.green {
+    background-color: rgb(46, 78, 38);
+    color: #fff;
+ }
+
+.blue {
+    background-color: rgba(38, 57, 78 , 0.3);
+    color: #000;
+}
+
+.brown {
+    background-color: hsl(0, 51%, 23%);
+    color: #fff;
+}
+
+.linear-gradient {
+    background: linear-gradient(to right, #4E2648, #18E0F2);
+    color: #fff;
+}
+
+.radial-gradient {
+    background: radial-gradient(#18E0F2, #4E2648);
+    color: #fff;
+}
+
+/* CSS BOX MODEL */
+.exemple {
+    background-color: aliceblue;
+    /*haut+ bas et droite+gauche */
+    padding: 30px 20px;
+    border: 2px solid #000;
+    /* dans le sens des aiguilles d'une montres */
+    margin: 20px 23px 100px 45px;
+    /*
+     margin-top: 20px;
+    margin-bottom: 100px;
+    margin-left: 45px;
+    margin-right: 23px;  
+    */
+    -webkit-box-shadow: 0px 15px 22px -15px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 15px 22px -15px rgba(0, 0, 0, 0.7);
+    text-shadow: -20px 4px 10px rgba(27,12,206,0.35);
+}
+
+.boxs {
+    position: relative;
+}
+
+.box-model, .box-model2, .box-model3 {
+    width: 200px;
+    height: 200px;
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;;
+    background-color: aliceblue;
+    border-radius: 30px;
+    position: absolute;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+
+/* z-index met en avant plan un élément par
+rapport a un autre */
+
+.box-model {
+    top: 10px;
+    background-color: aquamarine;
+    z-index: 2;
+}
+.box-model2 {
+    top: 20px;
+    background-color: chocolate;
+    z-index: 1;
+}
+.box-model3 {
+    top: 50px;
+    background-color: crimson;
+    z-index: 0;
+}
+
+/* Display */
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    border: 1px solid black
+}
+
+.inline {
+    display: inline;
+    background-color: #dc2432;
+}
+
+.block {
+    display: block;
+    background-color: #4E2648;
+}
+
+.inline-block {
+    display: inline-block;
+    background-color: chocolate;
+}
+
+.none {
+    display: none;
+    background-color: #000;
+}
+
+/* Les positions */
+.position {
+    background-color: #F1F1F1;
+    position: relative;
+    height: 1000px;
+    overflow-y: scroll;
+}
+
+/* Par defaut */
+.static {
+    position : static;
+    background-color: blue;
+}
+
+.relative {
+    position: relative;
+    top: 23px;
+    left: 10px;
+}
+
+.absolute {
+    position: absolute;
+    top: 10px;
+    background-color: aquamarine;
+    right: 10px;
+}
+.fixed {
+    position: fixed;
+    background-color: aliceblue;
+    top: 20px;
+    right: 100px;
+}
+
+.sticky {
+    position: sticky;
+    top: 100px;
+    background-color: red;
+}
+
+
+/* Float  */
+.right, .left {
+    height: 200px;
+
+}
+
+.right {
+    float: right;
+    width: 80%;
+    background-color: #18E0F2;
+}
+.left {
+    float: left;
+    width: 20%;
+    background-color: aquamarine;
+}
+
+/* Flex */
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.f_content {
+    display: flex;
+    height: 300px;
+    justify-content: space-between;
+
+
+}
+
+.f_aside, .f_aside2, .f_header, .f_footer, .f_detail {
+  padding: 20px;
+  border: 1px solid black
+}
+
+.f_detail {
+    /* agrandissement : valeur 1 */
+    flex-grow: 0;
+    /* retrecissement : valeur 2 */
+    flex-shrink: 0;
+    /* valeur taille initial : valeur 3 */
+    flex-basis: 50%
+    /* flex: 0 0 50% */
+}
+.f_aside  {
+    flex: 0 0 100px;
+}
+.f_aside2 {
+    flex: 0 0 30px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: auto 300px auto;
+}
+
+.g-box{
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.g_header, .g_footer{
+    background-color: gray;
+    grid-column: 1 / 6;
+}
+
+.g_header{
+    grid-row: 1 / 2;
+}
+
+.g_detail{
+    background-color: #4E2648;
+    grid-column: 2 / 5;
+}
+
+.g_aside {
+    grid-column: 1 / 2;
+}
+
+.g_aside2{
+    grid-column: 5 / 6;
+}
+
+
+/* Pseudo élément */
+
+.bfr::before{
+    content: "£";
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+.afr::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    
+}
+
+
+.btn{
+    background-color: #000;
+    padding: 10px;
+    border: none;
+    color: white;
+}
+
+.btn::before{
+    content: url(https://cdn-icons-png.flaticon.com/512/3135/3135715.png);
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+}
+
+
+
+.box-transition{
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+    transition: background-color 0.8s ease ;
+}
+
+.box-transition:hover{
+    background-color: blueviolet;
+}
+
+.boutton{
+    background-color: orange;
+    border: none;
+}
+
+.boutton:hover{
+    background-color: blueviolet;
+    transform: translateX(200px);
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: green;
+    animation: padding-anim 2s infinite linear;
+}
+
+@keyframes padding-anim{
+    /* definir les differents etats */
+    0% {
+        padding: 0px;
+    }
+    50% {
+        padding: 20px;
+    }
+    100% {
+        padding: 40px;
+    }
+}
+
+.mq-group{
+    display: flex;
+    gap: 20px;
+
+}
+
+.mq{
+    width: 200px;
+    height: 200px;
+    background-color: #000;
+}
+
+
+/* Desktop */
+/* tablette */
+@media screen and (min-width : 767px) and (max-width : 1023px) {
+    /* 4 */
+    .mq-group{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .mq{
+        width: 30%;
+    }
+}
+/* mobile */
+@media screen and (max-width : 767px) {
+    /* 1 */
+    .mq-group{
+        display: flex;
+        flex-direction: column;
+    }
+    .mq{
+        width: 100%;
+    }
+}
+
+

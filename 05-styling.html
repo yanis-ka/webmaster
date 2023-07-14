@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Commentaire */
+        /* Selecteurs */
+
+        /* balise poid 0*/
+        p{
+            /* key: value */
+            color: blueviolet;
+        }
+
+        /* Class poid 1*/
+        .highlight{
+            background-color: black;
+            color: white;
+        }
+
+        /* id poid 2 */
+        #unique{
+            text-align: center;
+            color: aquamarine;
+        }
+
+        /* Enfant de parent */
+        .parent .cadet{
+            font-weight: bolder;
+        }
+
+        /* enfant direct de parent */
+        .parent > .ainee{
+            font-weight: bolder;
+        }
+
+        .small:nth-child(even){
+            color: red;
+        }
+        .small:first-child{
+            color: chartreuse;
+        }
+
+    </style>
+</head>
+<body>
+    <!--EN TETE DE PAGE-->
+    <header>
+        <h1>Le CSS</h1>
+    </header>
+    <!--CONTENU PRINCIPAL-->
+    <main>
+        <h2 id="unique" class="highlight">Présentation et définition</h2>
+        <p class="hightlight">CSS (cascading Style Sheets) est un langage
+            de feuille de styles utilisé pour controller
+            l'apparence visuelle des éléments HTML
+        </p>
+        <p>Il existe 3 méthodes de déclarer du style</p>
+        <ol>
+            <li style="color: red;">Inline: Attribut style à l'intérieur de la balise</li>
+            <li>Outside: dans une balise style pouvant être placée dans un body ou header</li>
+            <li>External: dans un fichier externe "style.css" relié à ma page</li>
+        </ol>
+        <h2>Parent et enfant</h2>
+        <div class="parent">
+            <p class="ainee">Je suis l'ainée</p>
+            <p class="benjamin">Je suis au milieu</p>
+            <p class="cadet">Je suis le plus petit</p>
+        </div>
+
+        <h2>Les pseudos class</h2>
+        <div>
+            <span class="small">1</span>
+            <span class="small">2</span>
+            <span class="small">3</span>
+            <span class="small">4</span>
+            <span class="small">5</span>
+            <span class="small">6</span>
+            <span class="small">7</span>
+            <span class="small">8</span>
+            <span class="small">9</span>
+            <span class="small">10</span>
+
+        </div>
+
+        <h2>Les textes</h2>
+        <p class="text">Textes dopé au CSS</p>
+    </main>
+
+    <h2>Les dimensons</h2>
+
+    <div class="dimension">
+        <p>Texte sans valeur</p>
+    </div>
+
+    <h2>Les couleurs</h2>
+    <p class="red">Texte en rouge</p>
+    <p class="green">Texte en vert</p>
+    <p class="blue">Texte en bleu</p>
+    <p class="brown">Texte en marron</p>
+    <p class="linear-gradient">Texte en dégradé linéaire</p>
+    <p class="radial-gradient">Texte en dégradé radial</p>
+
+
+    <h2>Les pseudo éléments</h2>
+    <p>Crée un "pseudo élément" qui sera 1er enfant de l'élément ciblé.</p>
+    <p class="bfr">Je vais avoir un before</p>
+    <p class="afr">Je vais avoir un after</p>
+
+    <button class="btn"> Cliquez ici!</button>
+
+    <!--PIED DE PAGE-->
+    <footer>
+
+    </footer>
+</body>
+</html>
